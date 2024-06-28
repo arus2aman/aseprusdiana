@@ -74,7 +74,7 @@ def datahouse() :
   #sidebar 
   with st.form("Data Diri"):
       st.write("Inside the form")
-      slider_val = st.slider("Form slider",0,1000)
+      slider_val = st.slider("Form slider",21,120)
       checkbox_val = st.checkbox("Form checkbox")
 
   # Every form must have a submit button.
