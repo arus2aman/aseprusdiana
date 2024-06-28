@@ -116,8 +116,8 @@ def datahouse() :
   plotly_fig = px.scatter(house['price'],house['sqft_living'])
   st.plotly_chart(plotly_fig)
   
-  st.bar_chart(house['price'][0,10])
-  st.bar_chart(house['price'][0,10], horizontal=True)
+  st.bar_chart(house['price'].head(20))
+  st.bar_chart(house['price'].sample(20), horizontal=True)
 
 
 if __name__ == '__main__' : 
