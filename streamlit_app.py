@@ -21,11 +21,6 @@ if __name__ == '__main__' :
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
-#read json file dari data covid 
-#flight_passanger_api = requests.post('https://forecastpassengerapi.herokuapp.com/forecast_timeseries',json={
-  "month_limit": "2020-01-01",
-  "window_size": 12
-}).json()
 
 def main() : 
   st.write('Contoh dataframe')
