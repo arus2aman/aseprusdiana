@@ -22,8 +22,8 @@ if __name__ == '__main__' :
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
 
-def main() : 
+def datahouse() : 
   st.write('Contoh dataframe')
   st.dataframe(house)
   if __name__ == '__main__' : 
-  main()
+  datahouse()
