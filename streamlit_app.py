@@ -1,6 +1,6 @@
 import streamlit as st 
 
-def main() : 
+def utama() : 
   st.write('Minimal Example')
 
 if __name__ == '__main__' : 
