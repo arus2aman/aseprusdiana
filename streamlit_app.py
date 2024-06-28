@@ -25,6 +25,8 @@ house = pd.read_csv('house_clean.csv')
 def datahouse() : 
   st.write('Contoh dataframe')
   st.dataframe(house)
+  st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+  st.write('Menampilkan Dataframe dengan St AgGrid')
   
 if __name__ == '__main__' : 
   datahouse()
