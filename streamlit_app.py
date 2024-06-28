@@ -4,7 +4,7 @@ def utama() :
   st.write('Minimal Example')
 
 if __name__ == '__main__' : 
-  main()
+  utama()
 
 def main() : 
   st.header('This is Header')
