@@ -26,5 +26,5 @@ def datahouse() :
   st.write('Contoh dataframe')
   st.dataframe(house)
   
-  if __name__ == '__main__' : 
+if __name__ == '__main__' : 
   datahouse()
