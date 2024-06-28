@@ -80,9 +80,13 @@ def datahouse() :
   # Every form must have a submit button.
       submitted = st.form_submit_button("Submit")
       if submitted:
-          st.write("slider", slider_val, "checkbox", checkbox_val)
+          st.write("Usia Anda", slider_val, "Hasil Validasi", checkbox_val)
 
   st.write("Outside the form")
+  # Insert containers separated into tabs:
+  tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
+  tab1.write("this is tab 1")
+  tab2.write("this is tab 2")
 
 if __name__ == '__main__' : 
   datahouse()
