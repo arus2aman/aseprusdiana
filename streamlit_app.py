@@ -27,9 +27,10 @@ def datahouse() :
   st.dataframe(house)
   ##Untuk membuat metrik
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-  st.write('Menampilkan Dataframe dengan St AgGrid')
+  
 
   ##untuk menampilkan Aggrid--masih error
+  #st.write('Menampilkan Dataframe dengan St AgGrid')
   #AgGrid(house)
   #st.table([x for x in range(1,5)])
   ###untuk membuat tombol
