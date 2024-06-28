@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 #import requests
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 def utama() : 
   st.write('Minimal Example')
@@ -27,6 +27,7 @@ def datahouse() :
   st.dataframe(house)
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
   st.write('Menampilkan Dataframe dengan St AgGrid')
+  AgGrid(house)
   
 if __name__ == '__main__' : 
   datahouse()
