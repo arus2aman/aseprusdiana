@@ -25,5 +25,6 @@ house = pd.read_csv('house_clean.csv')
 def datahouse() : 
   st.write('Contoh dataframe')
   st.dataframe(house)
+  
   if __name__ == '__main__' : 
   datahouse()
