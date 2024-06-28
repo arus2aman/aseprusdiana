@@ -28,7 +28,6 @@ def datahouse() :
   ##Untuk membuat metrik
   st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
   
-
   ##untuk menampilkan Aggrid--masih error
   #st.write('Menampilkan Dataframe dengan St AgGrid')
   #AgGrid(house)
@@ -44,6 +43,9 @@ def datahouse() :
   #membuat slider
   age_slider = st.slider('Berapa Usia Anda',0,100)
   st.write('Usia Anda',age_slider)
+  #Input (Typing)
+  num_input = st.number_input('Input Berapapun')
+  st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
 if __name__ == '__main__' : 
   datahouse()
