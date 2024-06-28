@@ -113,7 +113,7 @@ def datahouse() :
   fig,ax = plt.subplots()
   plt.scatter(house['price'],house['sqft_lot'])
   st.pyplot(fig)
-  plotly_fig = px.scatter(house['price'],titanic['sqft_living'])
+  plotly_fig = px.scatter(house['price'],house['sqft_living'])
   st.plotly_chart(plotly_fig)
 
 if __name__ == '__main__' : 
