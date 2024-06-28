@@ -115,23 +115,9 @@ def datahouse() :
   st.pyplot(fig)
   plotly_fig = px.scatter(house['price'],house['sqft_living'])
   st.plotly_chart(plotly_fig)
-  st.bar_chart(house['price'])
-  st.bar_chart(house['price'], horizontal=True)
+  st.bar_chart(house['price':10])
+  st.bar_chart(house['price':10], horizontal=True)
 
-  # Work with user selections
-  event = st.plotly_chart(
-    house['price'],
-    on_select="rerun"
-  )
-  event = st.altair_chart(
-    chart,
-    on_select="rerun"
-  )
-  event = st.vega_lite_chart(
-    house['price'],
-    spec,
-    on_select="rerun"
-  )
 
 if __name__ == '__main__' : 
   datahouse()
