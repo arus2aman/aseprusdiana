@@ -93,8 +93,8 @@ def datahouse() :
      st.button('Click Aing')
   # Show a spinner during a process
   with st.spinner(text="In progress"):
-      time.sleep(3)
-      st.success("Done")
+     time.sleep(3)
+     st.success("Done")
 
   # Show and update progress bar
   bar = st.progress(50)
