@@ -3,6 +3,8 @@ import pandas as pd
 #import requests
 from st_aggrid import AgGrid
 import time
+import plotly.express as px 
+import matplotlib.pyplot as plt
 
 def utama() : 
   st.write('Minimal Example')
@@ -106,6 +108,13 @@ def datahouse() :
       time.sleep(2)
       st.write("Some long response.")
       s.update(label="Response")
+  
+  #matplotlib chart 
+  fig,ax = plt.subplots()
+  plt.scatter(house['price'],house['sqft_lot'])
+  st.pyplot(fig)
+  plotly_fig = px.scatter(house['price'],titanic['sqft_living'])
+  st.plotly_chart(plotly_fig)
 
 if __name__ == '__main__' : 
   datahouse()
