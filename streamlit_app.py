@@ -118,7 +118,6 @@ def datahouse() :
   st.bar_chart(house['price'].head(20))
   st.bar_chart(house['price'].sample(20), horizontal=True)
 
-
 if __name__ == '__main__' : 
   datahouse()
 
