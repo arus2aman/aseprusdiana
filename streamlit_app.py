@@ -51,7 +51,7 @@ def datahouse() :
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
   
   #columns :
-  col1, col2, col3 = st.columns(3)
+  col1, col2, col3 = st.columns([1,2,1])
 
   with col1:
       st.header("A cat")
